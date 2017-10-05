@@ -1,0 +1,22 @@
+.SearchControls {
+
+}
+
+.SearchControls__query {
+  margin-bottom: 20px;
+}
+
+.SearchControls__query input {
+  padding: 10px;
+  font-size: 18px;
+  width: 75%;
+}
+
+.SearchControls__filters {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.SearchControls__filters label input {
+  margin-right: 10px;
+}
