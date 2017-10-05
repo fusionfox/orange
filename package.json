@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://fusionfox.github.io/s",
   "dependencies": {
+    "classnames": "^2.2.5",
     "eslint": "^4.8.0",
     "eslint-plugin-react": "^7.4.0",
     "prop-types": "^15.6.0",
