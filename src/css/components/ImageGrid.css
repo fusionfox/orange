@@ -1,0 +1,11 @@
+.ImageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+}
+
+.ImageGrid__Thumbnail {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
