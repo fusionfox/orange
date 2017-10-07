@@ -4,10 +4,9 @@ import classNames from 'classnames';
 import Thumbnail from './Thumbnail'
 
 const ImageGrid = (props) => {
-  let thumbnails = []
-  for (let i=0; i < props.images; i++) {
-    thumbnails.push(<Thumbnail className='ImageGrid__Thumbnail' />)
-  }
+  let thumbnails = props.images.map((image) => {
+    return <Thumbnail key={image.id} className='ImageGrid__Thumbnail' />
+  })
 
   return (
     <div className={classNames(props.className, 'ImageGrid')}>

@@ -3,14 +3,16 @@ import '../../css/components/SearchControls.css';
 import classNames from 'classnames';
 
 const SearchControls = (props) => {
-  function handleChange(e) {
-    props.setImages(e.target.value)
+  const handleKeyUp = (e) => {
+    if (e.key === 'Enter') {
+      props.performSearch(e.target.value)
+    }
   }
 
   return (
     <div className={classNames(props.className, 'SearchControls')}>
       <div className='SearchControls__query'>
-        <input type='text' onChange={handleChange} />
+        <input type='text' onKeyUp={handleKeyUp} />
       </div>
       <div className='SearchControls__filters'>
         <label>
