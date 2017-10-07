@@ -4,6 +4,7 @@ import './../css/Search.css'
 import Title from './components/Title'
 import SearchControls from './components/SearchControls'
 import ImageGrid from './components/ImageGrid'
+import nasaImageDataAdapter from './utils/nasaImageDataAdapter'
 
 axios.defaults.baseURL = 'https://images-api.nasa.gov'
 
@@ -15,17 +16,9 @@ class Search extends Component {
     }
   }
 
-  nasaDataAdapter = (nasaItem) => {
-    return ({
-      id: nasaItem.data[0].nasa_id,
-      alt: nasaItem.data[0].title,
-      href: nasaItem.links[0].href
-    })
-  }
-
   searchNasa = (query) => {
     axios.get(`/search?q=${query}&media_type=image`)
-      .then((response) => response.data.collection.items.map(this.nasaDataAdapter))
+      .then((response) => response.data.collection.items.map(nasaImageDataAdapter))
       .then((data) => this.setState({images: data}))
       .catch((error) => {
         console.log(error);
