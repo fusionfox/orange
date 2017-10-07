@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
-import './../css/Search.css';
+import React, { Component } from 'react'
+import axios from 'axios'
+import './../css/Search.css'
 import Title from './components/Title'
 import SearchControls from './components/SearchControls'
 import ImageGrid from './components/ImageGrid'
+
+axios.defaults.baseURL = 'https://images-api.nasa.gov'
 
 class Search extends Component {
   constructor() {
@@ -21,9 +24,12 @@ class Search extends Component {
   }
 
   searchNasa = (query) => {
-    const stub = require('../nasa-stub-data.json')
-    const data = stub.collection.items.map(this.nasaDataAdapter)
-    this.setState({images: data})
+    axios.get('/search?q=moon')
+      .then((response) => response.data.collection.items.map(this.nasaDataAdapter))
+      .then((data) => this.setState({images: data}))
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   render() {
