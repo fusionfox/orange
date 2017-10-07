@@ -5,7 +5,7 @@ import Thumbnail from './Thumbnail'
 
 const ImageGrid = (props) => {
   let thumbnails = props.images.map((image) => {
-    return <Thumbnail key={image.id} className='ImageGrid__Thumbnail' href={image.href} alt={image.alt} />
+    return <Thumbnail key={image.id} className='ImageGrid__Thumbnail' image={image} />
   })
 
   return (

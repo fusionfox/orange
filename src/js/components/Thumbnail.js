@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../../css/components/Thumbnail.css';
 import classNames from 'classnames';
 
 const Thumbnail = (props) => {
   return (
     <li className={classNames(props.className, 'Thumbnail')}>
-      <img className='Thumbnail__image' src={props.href} alt={props.alt} />
+      <Link to={`/asset/${props.image.id}`}>
+        <img className='Thumbnail__image' src={props.image.href} alt={props.image.alt} />
+      </Link>
     </li>
   )
 }
