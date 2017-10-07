@@ -1,0 +1,15 @@
+.Asset {
+  text-align: center;
+}
+
+.Asset__Title {
+  margin-top: 50px;
+}
+
+.Asset__Description {
+  padding: 0 5%;
+}
+
+.Asset__Image {
+  width: 80%;
+}
