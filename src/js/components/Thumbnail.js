@@ -5,7 +5,7 @@ import classNames from 'classnames';
 const Thumbnail = (props) => {
   return (
     <div className={classNames(props.className, 'Thumbnail')}>
-      <img className='Thumbnail__image' src={props.href} />
+      <img className='Thumbnail__image' src={props.href} alt={props.alt} />
     </div>
   )
 }

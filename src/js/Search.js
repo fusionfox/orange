@@ -15,6 +15,7 @@ class Search extends Component {
   nasaDataAdapter = (nasaItem) => {
     return ({
       id: nasaItem.data[0].nasa_id,
+      alt: nasaItem.data[0].title,
       href: nasaItem.links[0].href
     })
   }
