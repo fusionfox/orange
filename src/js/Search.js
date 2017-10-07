@@ -24,7 +24,7 @@ class Search extends Component {
   }
 
   searchNasa = (query) => {
-    axios.get(`/search?q=${query}`)
+    axios.get(`/search?q=${query}&media_type=image`)
       .then((response) => response.data.collection.items.map(this.nasaDataAdapter))
       .then((data) => this.setState({images: data}))
       .catch((error) => {
