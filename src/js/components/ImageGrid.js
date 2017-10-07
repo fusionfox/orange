@@ -9,9 +9,9 @@ const ImageGrid = (props) => {
   })
 
   return (
-    <div className={classNames(props.className, 'ImageGrid')}>
+    <ul className={classNames(props.className, 'ImageGrid')}>
       {thumbnails}
-    </div>
+    </ul>
   )
 }
 

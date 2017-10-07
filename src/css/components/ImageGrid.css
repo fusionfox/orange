@@ -1,8 +1,10 @@
 .ImageGrid {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 30px;
+  padding: 0;
 }
 
 .ImageGrid__Thumbnail {
