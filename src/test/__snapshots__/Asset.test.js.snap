@@ -13,7 +13,7 @@ exports[`Asset rendered correctly 1`] = `
   <img
     alt={undefined}
     className="Asset__Image"
-    src="../images/blank.png"
+    src="blank.png"
   />
 </div>
 `;

@@ -4,6 +4,7 @@ import './../css/Asset.css';
 import Title from './components/Title'
 import ReactImageFallback from "react-image-fallback";
 import nasaImageDataAdapter from './utils/nasaImageDataAdapter'
+import blankImage from '../images/blank.png'
 
 axios.defaults.baseURL = 'https://images-api.nasa.gov'
 
@@ -29,7 +30,7 @@ class Asset extends Component {
       <div className="Asset">
         <Title className="Asset__Title" text={this.state.image.title} />
         <p className="Asset__Description">{this.state.image.description}</p>
-        <ReactImageFallback className="Asset__Image" src={this.state.image.large} fallbackImage={this.state.image.thumbnail||'../images/blank.png'} alt={this.state.image.title} />
+        <ReactImageFallback className="Asset__Image" src={this.state.image.large} fallbackImage={this.state.image.thumbnail||blankImage} alt={this.state.image.title} />
       </div>
     );
   }
