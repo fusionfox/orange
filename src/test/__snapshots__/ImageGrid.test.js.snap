@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageGrid rendered correctly 1`] = `
+<ul
+  className="ImageGrid"
+>
+  <li
+    className="ImageGrid__Thumbnail Thumbnail"
+  >
+    <a
+      href="/asset/PIA00231"
+      onClick={[Function]}
+    >
+      <img
+        alt="Photo of the moon"
+        className="Thumbnail__image"
+        src="https://images-assets.nasa.gov/image/PIA00231/PIA00231~thumb.jpg"
+      />
+    </a>
+  </li>
+  <li
+    className="ImageGrid__Thumbnail Thumbnail"
+  >
+    <a
+      href="/asset/PIA03149"
+      onClick={[Function]}
+    >
+      <img
+        alt="Photo of the sun"
+        className="Thumbnail__image"
+        src="https://images-assets.nasa.gov/image/PIA03149/PIA03149~thumb.jpg"
+      />
+    </a>
+  </li>
+</ul>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Asset rendered correctly 1`] = `
+<div
+  className="Asset"
+>
+  <h1
+    className="Asset__Title Title"
+  />
+  <p
+    className="Asset__Description"
+  />
+  <img
+    alt={undefined}
+    className="Asset__Image"
+    src={undefined}
+  />
+</div>
+`;

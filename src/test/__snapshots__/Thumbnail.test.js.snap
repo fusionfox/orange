@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image Thumbnail rendered correctly 1`] = `
+<li
+  className="Thumbnail"
+>
+  <a
+    href="/asset/PIA00231"
+    onClick={[Function]}
+  >
+    <img
+      alt="Photo of the moon"
+      className="Thumbnail__image"
+      src="https://images-assets.nasa.gov/image/PIA00231/PIA00231~thumb.jpg"
+    />
+  </a>
+</li>
+`;

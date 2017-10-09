@@ -1,0 +1,19 @@
+{
+  "links": [{
+    "rel": "preview",
+    "render": "image",
+    "href": "https://images-assets.nasa.gov/image/PIA00231/PIA00231~thumb.jpg"
+  }],
+  "data": [{
+    "description": "These four images of the Moon are from data acquired by NASA Galileo spacecraft Near-Earth Mapping Spectrometer during Galileo December 1992 Earth/Moon flyby.  http://photojournal.jpl.nasa.gov/catalog/PIA00231",
+    "center": "JPL",
+    "nasa_id": "PIA00231",
+    "date_created": "1996-02-08T12:58:43Z",
+    "title": "Moon As Seen By NIMS",
+    "keywords": ["Moon", "Galileo"],
+    "media_type": "image",
+    "secondary_creator": "NASA/JPL",
+    "description_508": "These four images of the Moon are from data acquired by NASA Galileo spacecraft Near-Earth Mapping Spectrometer during Galileo December 1992 Earth/Moon flyby."
+  }],
+  "href": "https://images-assets.nasa.gov/image/PIA00231/collection.json"
+}

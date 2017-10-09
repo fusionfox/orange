@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search rendered correctly 1`] = `
+<div
+  className="Search"
+>
+  <h1
+    className="Search__Title Title"
+  >
+    Search Page
+  </h1>
+  <div
+    className="Search__Controls SearchControls"
+  >
+    <div
+      className="SearchControls__query"
+    >
+      <input
+        onKeyUp={[Function]}
+        placeholder="Input query then press Enter"
+        type="text"
+      />
+    </div>
+    <div
+      className="SearchControls__filters"
+    >
+      <label>
+        <input
+          checked={true}
+          name="media_type"
+          onChange={[Function]}
+          type="radio"
+          value="image"
+        />
+        Images
+      </label>
+      <label>
+        <input
+          checked={false}
+          name="media_type"
+          onChange={[Function]}
+          type="radio"
+          value="audio"
+        />
+        Audio
+      </label>
+    </div>
+  </div>
+  <ul
+    className="Search__ImageGrid ImageGrid"
+  />
+</div>
+`;
